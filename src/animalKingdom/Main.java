@@ -4,6 +4,7 @@ import java.util.*;
 
 public class Main
 {
+    //#region Public Methods
     public static void printAnimals(ArrayList<Animal> animals, SortAnimals tester)
     {
         for(Animal a : animals)
@@ -14,9 +15,10 @@ public class Main
             }
         }
     }
-
+    //#endregion
     public static void main(String[] args)
     {
+        //#region Create the animals and add them to the list
         ArrayList<Animal> arrList = new ArrayList<>();
 
         // Mammals
@@ -54,6 +56,7 @@ public class Main
         arrList.add(catfish);
         Fish perch = new Fish("Perch", 1758);
         arrList.add(perch);
+        //#endregion
 
         //#region Testing
 
