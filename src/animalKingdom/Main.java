@@ -114,6 +114,15 @@ public class Main
         System.out.println("alphabetically and those that were named in 1758:");
         arrList.sort((o1, o2) -> o1.name.compareToIgnoreCase(o2.name));
         printAnimals(arrList, a -> a.yearDiscovered == 1758);
+
+
+        System.out.println();
+        System.out.println("----------------------------Stretch---------------------------------");
+        System.out.println();
+
+        System.out.println("List animals alphabetically those that are mammals:");
+        arrList.sort((o1, o2) -> o1.name.compareToIgnoreCase(o2.name));
+        printAnimals(arrList, a -> a instanceof Mammals);
         //#endregion
     }
 }
