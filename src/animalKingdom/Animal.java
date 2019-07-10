@@ -3,9 +3,9 @@ package animalKingdom;
 public abstract class Animal
 {
     public static int maxID = 0;
-    int id;
-    String name;
-    int yearDiscovered;
+    public int id;
+    public String name;
+    public int yearDiscovered;
 
 
     public Animal(String name, int yearDiscovered)
